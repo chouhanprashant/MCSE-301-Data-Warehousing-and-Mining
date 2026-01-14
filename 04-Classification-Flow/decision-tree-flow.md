@@ -1,78 +1,69 @@
-# Decision Tree – Flow Based Explanation (Zero Level)
+# Decision Tree – Theory Focused (Exam-Oriented)
 
 ## What is a Decision Tree?
-Decision Tree ek **classification technique** hai jisme:
-- Decisions **tree structure** ke form me liye jaate hain
-- Data ko **questions puch-puch kar** classify kiya jaata hai
+Decision Tree ek **classification technique** hai jo data ko
+**tree structure** ke form me represent karti hai.
+
+Isme:
+- Internal nodes = attributes / questions
+- Branches = decision outcomes
+- Leaf nodes = final class labels
 
 Simple words:
-> Decision Tree data par questions lagata hai aur final decision tak pahunchta hai.
+> Decision Tree data par sawal puchta hai aur answer ke base par decision leta hai.
 
 ---
 
-## Why Decision Tree is Used?
-- Easy to understand
-- Easy to draw in exam
+## Why Decision Tree is Important in Data Mining?
+- Easy to understand and interpret
 - Human decision making jaisa kaam karta hai
-- Classification rules easily mil jaate hain
+- Classification rules easily generate ho jaate hain
+- Categorical data ke liye very effective
 
 ---
 
-## Structure of Decision Tree
+## Structure of a Decision Tree
+1. **Root Node**  
+   - Sabse pehla attribute
+   - Pure dataset ko represent karta hai
 
-- **Root Node**: Sabse pehla decision
-- **Internal Node**: Beech ke questions
-- **Leaf Node**: Final class / decision
+2. **Internal Nodes**  
+   - Decision points
+   - Attribute values ke base par split
+
+3. **Leaf Nodes**  
+   - Final output / class label
+   - No further splitting
 
 ---
 
 ## How Decision Tree Works (Flow)
-
-1. Sabse pehle poora training data liya jaata hai  
-2. Best attribute select kiya jaata hai (root node ke liye)  
-3. Data ko branches me divide kiya jaata hai  
+1. Training dataset select kiya jaata hai  
+2. Best attribute choose kiya jaata hai (root node)  
+3. Dataset ko branches me divide kiya jaata hai  
 4. Har branch par same process repeat hota hai  
-5. Jab decision clear ho jaata hai → leaf node ban jaata hai  
+5. Jab data pure ho jaata hai → leaf node ban jaata hai  
 
 ---
 
-## Simple Example
+## Decision Tree Induction
+Decision Tree Induction ka matlab hai:
+> Training data se decision tree ko automatically generate karna.
 
-Question:
-> Kya aaj play karna chahiye?
-
-Conditions:
-- Weather
-- Temperature
-
-Flow:
-- Agar Weather = Sunny → Play ❌  
-- Agar Weather = Rainy → Play ✅  
+Basic steps:
+- Attribute selection
+- Dataset partitioning
+- Recursive splitting
+- Stopping condition apply karna
 
 ---
 
-## Decision Tree Induction (Algorithm Flow)
-
-Start  
-↓  
-Select Best Attribute  
-↓  
-Create Node  
-↓  
-Split Dataset  
-↓  
-Repeat for Each Subset  
-↓  
-Stop when Class is Pure  
-
----
-
-## Can We Get Classification Rules from Decision Tree?
+## Can We Get Classification Rules from Decision Trees?
 Yes.
 
-Rule banane ka tareeka:
-- Root se leaf tak ka path follow karo
-- Har path = ek rule
+Rule nikalne ka process:
+- Root node se leaf node tak ek path lo
+- Har path ek **IF–THEN rule** ban jaata hai
 
 Example:
 IF Weather = Sunny AND Humidity = High  
@@ -81,40 +72,49 @@ THEN Play = No
 ---
 
 ## Enhancements to Basic Decision Tree
-- Pruning (unnecessary branches remove)
-- Handling missing values
-- Continuous attribute handling
-- Avoid overfitting
+- **Pruning**: Unnecessary branches remove karna
+- **Handling Missing Values**
+- **Handling Continuous Attributes**
+- **Avoid Overfitting**
+
+Ye enhancements tree ko:
+- Simple
+- Accurate
+- Generalized banate hain
 
 ---
 
-## Advantages
-- Easy to interpret
-- No complex maths
-- Works well for categorical data
+## Advantages of Decision Tree
+- Simple and intuitive
+- No complex mathematics
+- Easy to implement
+- Easy to explain in exam
 
 ---
 
-## Disadvantages
+## Disadvantages of Decision Tree
 - Overfitting ka risk
-- Large tree complex ho jaata hai
+- Large datasets me tree complex ho sakta hai
+- Small data change se structure change ho sakta hai
 
 ---
 
 ## Exam Diagram (2-minute Drawing)
 
-          Weather
-          /     \
-      Sunny     Rainy
-        |         |
-     No Play   Play
+          Attribute
+          /        \
+      Value1      Value2
+        |            |
+     Class A      Class B
 
 ---
 
 ## One-Line Understanding
-Decision Tree data ko step-by-step questions ke through classify karta hai.
+Decision Tree data ko step-by-step decisions ke through classify karta hai.
 
 ---
 
-## Exam Trigger Line ⭐
-Decision Tree is a tree-based classification technique where internal nodes represent attributes, branches represent decisions and leaf nodes represent class labels.
+## Exam Trigger Lines (Use any)
+- Decision Tree is a tree-based classification method.
+- Decision Tree represents decisions in the form of nodes and branches.
+- Classification rules can be easily derived from decision trees.
