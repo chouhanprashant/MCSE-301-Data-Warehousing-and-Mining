@@ -97,7 +97,10 @@ Data → Cleaning → Integration → Selection → Transformation
 - **KDD** = Complete process  
 - **Data Mining** = Core step inside KDD
 
----
+## DIAGRAM (Exam me draw karna)
+Data → Cleaning → Integration → Selection → Transformation  
+→ Data Mining → Pattern Evaluation → Knowledge  
 
-## EXAM TRIGGER LINE ⭐
-> **“KDD is an iterative process that transforms raw data into useful knowledge, with data mining as its central step.”**
+(Simple flow diagram)
+
+![KDD Process Diagram](../13-Diagrams/c6704f22e76096d5fed56401bd19841f134e65e49f885c5f1466c35aa4f7548e.png)
