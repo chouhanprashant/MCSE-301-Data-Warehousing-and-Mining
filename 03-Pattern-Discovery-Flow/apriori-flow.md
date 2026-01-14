@@ -134,3 +134,87 @@ L2, L3, … Lk
 
 ## ONE-LINE MEMORY TRICK
 👉 **Apriori = Early Pruning**
+
+# Apriori Algorithm – Simple Solution (Zero Level)
+
+## Question
+Find frequent itemsets using Apriori algorithm.  
+Minimum Support = 2
+
+---
+
+## Given Transaction Data
+T1: A, B  
+T2: A, C  
+T3: A, B  
+T4: B, C  
+
+---
+
+## Step 1: Candidate 1-Itemsets (C1)
+Har item ko count karo.
+
+Item | Count  
+A    | 3  
+B    | 3  
+C    | 2  
+
+---
+
+## Step 2: Frequent 1-Itemsets (L1)
+Rule: Count ≥ Minimum Support (2)
+
+L1 = {A, B, C}
+
+---
+
+## Step 3: Candidate 2-Itemsets (C2)
+L1 se pairs banao:
+
+A,B  
+A,C  
+B,C  
+
+Unka count:
+
+Pair | Count  
+A,B  | 2  
+A,C  | 1  
+B,C  | 1  
+
+---
+
+## Step 4: Frequent 2-Itemsets (L2)
+Rule: Count ≥ 2
+
+L2 = {A,B}
+
+A,C aur B,C remove ho gaye (support kam).
+
+---
+
+## Step 5: Candidate 3-Itemsets (C3)
+A,B,C
+
+Count = 0  
+Minimum support satisfy nahi hota.
+
+Algorithm stop.
+
+---
+
+## Final Frequent Itemsets
+A  
+B  
+C  
+A,B  
+
+---
+
+## One-Line Understanding
+Jo item ya itemset kam baar aata hai, usse aage consider nahi kiya jaata.
+
+---
+
+## Exam Trigger Line
+Apriori algorithm generates frequent itemsets by using minimum support and pruning infrequent candidates at early stages.
