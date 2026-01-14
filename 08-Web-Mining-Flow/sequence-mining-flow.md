@@ -1,3 +1,89 @@
+**# Web Mining – Very Simple Explanation (Exam-Pass Level)
+
+## Definition
+Web Mining ek data mining technique hai jo
+**web data se useful information** nikalti hai.
+
+Simple words:
+> Web Mining website ke data ko analyse karke patterns nikalti hai.
+
+---
+
+## Why Web Mining?
+Internet par:
+- Bahut zyada data hota hai
+- Users ka behaviour samajhna zaroori hota hai
+
+Web Mining:
+- User behaviour samajhne me madad karti hai
+- Website improve karne me help karti hai
+
+---
+
+## Types of Web Mining
+
+### 1️⃣ Web Content Mining
+- Web pages ke content se information nikalna
+- Text, images, videos analyse kiye jaate hain
+
+Example:
+News website se articles analyse karna
+
+---
+
+### 2️⃣ Web Structure Mining
+- Websites ke links ka structure analyse karna
+- Kaunsi page kis se connected hai
+
+Example:
+Search engine ranking
+
+---
+
+### 3️⃣ Web Usage Mining
+- User ke actions analyse karna
+- Logs se pata lagta hai user kya karta hai
+
+Example:
+User ka click pattern
+
+---
+
+## Simple Flow of Web Mining
+Web Data  
+↓  
+Preprocessing  
+↓  
+Pattern Discovery  
+↓  
+Useful Information  
+
+---
+
+## Web Mining Uses
+- Recommendation systems
+- Website personalization
+- Customer behaviour analysis
+- Web traffic analysis
+
+---
+
+## Advantages
+- User experience improve hota hai
+- Business decision better hote hain
+- Large web data analyse hota hai
+
+---
+
+## Limitations
+- Data bahut noisy hota hai
+- Privacy issues ho sakte hain
+
+---
+
+## Exam Trigger Line
+Web Mining extracts useful patterns and knowledge from web data.**
+
 # Sequence Mining – Very Simple Explanation (Exam-Pass Level)
 
 ## Definition
@@ -81,3 +167,4 @@ Frequent Sequences
 
 ## Exam Trigger Line
 Sequence Mining discovers frequent ordered patterns from sequence data.
+
