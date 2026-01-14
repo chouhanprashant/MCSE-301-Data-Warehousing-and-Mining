@@ -89,8 +89,5 @@ Data → Warehouse → Mining Engine → Patterns → User
 
 ## 📊 Data Mining Architecture – Diagram (Quick Recall)
 
-![Data Mining System Architecture](../13-Diagrams/715bdd0efb4cfc4617...640064ef62041.jpeg)
 
-**Diagram yaad rakhne ka trick:**  
-Data → Warehouse → Mining Engine → Pattern → User  
-(Data Mining Engine = core)
+![Data Mining System Architecture](../13-Diagrams/715bdd0efb4cfc46174104a5d3f3c50b1b34897d48df1c7df01640064ef62041.jpeg)
