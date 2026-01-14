@@ -107,6 +107,90 @@ FP-Growth:
 FP-Growth frequent itemsets ko FP-Tree ke through nikalta hai bina candidate generate kiye.
 
 ---
+# FP-Growth Algorithm (Theory-Oriented Answer)
 
-## Exam Trigger Line
-FP-Growth algorithm uses divide and conquer strategy and FP-Tree structure to mine frequent patterns efficiently without candidate generation.
+## What is FP-Growth?
+FP-Growth (Frequent Pattern Growth) ek **association rule mining algorithm** hai
+jo **frequent itemsets** ko efficiently discover karta hai.
+
+Apriori ke unlike, FP-Growth:
+- Candidate itemsets generate nahi karta
+- Database ko baar-baar scan nahi karta
+- Isliye zyada fast aur memory-efficient hota hai
+
+---
+
+## Why FP-Growth was Proposed?
+Apriori algorithm me:
+- Bahut zyada candidate itemsets bante hain
+- Multiple database scans lagte hain
+- Time aur memory cost high hoti hai
+
+In problems ko solve karne ke liye **FP-Growth algorithm** introduce kiya gaya.
+
+---
+
+## Core Idea of FP-Growth
+> FP-Growth algorithm frequent itemsets ko **FP-Tree structure** ke through
+> **divide and conquer approach** use karke mine karta hai,
+> bina candidate itemsets generate kiye.
+
+---
+
+## How FP-Growth Works (Flow)
+
+1. Database ko ek baar scan karke
+   frequent items ki list banayi jaati hai.
+2. Transactions ko frequency order me arrange kiya jaata hai.
+3. In transactions se **FP-Tree** construct kiya jaata hai.
+4. Har item ke liye **Conditional Pattern Base** nikala jaata hai.
+5. Conditional FP-Tree banaya jaata hai.
+6. Recursive mining se frequent itemsets generate hote hain.
+
+---
+
+## How FP-Growth Avoids Candidate Generation?
+FP-Growth algorithm:
+- Candidate itemsets explicitly generate nahi karta
+- Frequent patterns ko directly **FP-Tree ke paths** se extract karta hai
+- Conditional Pattern Bases aur Conditional FP-Trees ka use karta hai
+
+Isliye:
+- Join step nahi hota
+- Prune step nahi hota
+- Candidate explosion problem avoid hoti hai
+
+---
+
+## FP-Growth vs Apriori (Key Difference)
+
+Apriori:
+- Candidate itemsets generate karta hai
+- Multiple database scans
+- Slower for large datasets
+
+FP-Growth:
+- No candidate generation
+- Very few database scans
+- Faster and scalable
+
+---
+
+## Diagram (Exam Drawing – Simple)
+
+Database
+   ↓
+Frequency Count
+   ↓
+FP-Tree Construction
+   ↓
+Conditional Pattern Base
+   ↓
+Conditional FP-Tree
+   ↓
+Frequent Itemsets
+
+---
+
+## One-Line Exam Trigger
+FP-Growth algorithm mines frequent patterns efficiently using FP-Tree and divide-and-conquer strategy without generating candidate itemsets.
